@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandile Dladla - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <button type="button" onclick="window.location='#home'">Home</button>
+            <button type="button" onclick="window.location='#about'">About</button>
+            <button type="button" onclick="window.location='#projects'">Projects</button>
+            <button type="button" onclick="window.location='#contact'">Contact</button>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>I'm Bandile Dladla</h2>
+        <p>Ghost Your Doubts!!</p>
+        <img src="IMG-20250215-WA0048.jpg" alt="Bandile Dladla">
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my profile website! I am a dedicated and optimistic third-year software development student with a passion for creating beautiful, functional, and efficient web experiences.</p>
+        <p>I am focused on building scalable software solutions. My academic journey has given me a solid foundation in software development principles, and I am eager to apply my knowledge to real-world projects.</p>
+        <p>I hold a Diploma in IT with focuses in multiple programming languages and web development.</p>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java, Python, C#</li>
+            <li>Web and App Development</li>
+            <li>Delphi</li>
+            <li>Database Management</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Web Page Development</h3>
+            <p>Designed and developed a fully responsive website, ensuring a smooth user experience across various devices.</p>
+        </div>
+        <div class="project">
+            <h3>App Development</h3>
+            <p>Created a mobile application with a focus on user experience, offering easy-to-use features and a seamless interface.</p>
+        </div>
+        <div class="project">
+            <h3>Shortest Path</h3>
+            <p>Developed an algorithm to find the shortest path between Durban and Gauteng, demonstrating my problem-solving skills.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p>Phone: 0637886142 </p>
+        <p>Email: <a href="mailto:sb.dladla1@gmail.com">sb.dladla1@gmail.com</a></p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

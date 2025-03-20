@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Profile</h2>
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+            </div>
+            <div class="form-group">
+                <label for="farmType">Farm Type</label>
+                <input type="text" id="farmType" name="farmType" placeholder="Enter your farm type (e.g., Crop, Livestock)" required>
+            </div>
+            <button type="submit">Save Profile</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <p>Profile updated successfully!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

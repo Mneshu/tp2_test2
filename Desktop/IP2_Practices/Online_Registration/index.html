@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Online Registration</h2>
+        <form id="registrationForm">
+            <label for="title">Title:</label>
+            <select id="title" name="title" onchange="checkOtherTitle()">
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="otherTitle" name="otherTitle" placeholder="Specify Title" style="display:none;">
+            
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="idNumber">SA ID Number:</label>
+            <input type="text" id="idNumber" name="idNumber" maxlength="13" required oninput="validateID()">
+            <small id="birthDayOutput"></small>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required oninput="validatePassword()">
+            <small id="passwordMessage"></small>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required oninput="checkPasswordMatch()">
+            <small id="confirmPasswordMessage"></small>
+
+            <label for="preferences">Preferences (Admin/User/Others):</label>
+            <textarea id="preferences" name="preferences" rows="3"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
